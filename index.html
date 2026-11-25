@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HabitFlow | Daily Goals</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><div class="shell">
+<header><div class="brand"><span class="logo">H</span><div><b>HabitFlow</b><small>Small steps. Big changes.</small></div></div><span class="date" id="today"></span></header>
+<section class="hero"><div><p class="eyebrow">YOUR PERSONAL GROWTH SPACE</p><h1>Build better habits,<br><em>one day at a time.</em></h1><p class="sub">Consistency is the secret ingredient to progress.</p></div><div class="hero-mark">✦</div></section>
+<section class="stats">
+<div class="stat"><span>Total habits</span><strong id="total">0</strong><small>You're building momentum</small></div>
+<div class="stat"><span>Completed today</span><strong id="completed">0</strong><small>Every check-in counts</small></div>
+<div class="stat"><span>Daily progress</span><strong id="percent">0%</strong><div class="track"><i id="progress"></i></div></div>
+</section>
+<main><section class="panel"><div class="section-head"><div><p class="eyebrow">DAILY ROUTINE</p><h2>My habits</h2></div><span class="pill">TODAY</span></div>
+<form id="habitForm"><input id="habitName" placeholder="Add a new habit..." maxlength="100" required><select id="category"><option>Personal</option><option>Health</option><option>Learning</option><option>Career</option><option>Fitness</option></select><button>Add habit +</button></form>
+<div id="habits" class="habit-list"></div><p id="empty" class="empty" hidden>No habits yet. Add your first habit above.</p></section>
+<section class="panel week-panel"><p class="eyebrow">STAY CONSISTENT</p><h2>Last 7 days</h2><div id="week" class="week"></div><p class="hint">Bars show the number of habit check-ins recorded each day.</p></section></main>
+<footer>HabitFlow · Your progress, your pace</footer></div><script src="/static/app.js"></script></body></html>
